@@ -8,35 +8,25 @@
       background-repeat: no-repeat;
     }
     
-    .fadeIn {
-      animation-name: fadeIn;
-      animation-duration: 3s;
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
     }
     
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(-50px);
-      }
-      
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    
-    .center-text {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 48px;
-      font-weight: bold;
-      color: black;
+    .container img {
+      max-width: 300px;
+      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
-  <div class="center-text fadeIn">AhoyMC</div>
+  <div class="container">
+    <img src="path_to_shop_image.jpg" alt="Shop">
+    <img src="path_to_forums_image.jpg" alt="Forums">
+    <a href="https://discord.gg/example"><img src="path_to_discord_image.jpg" alt="Discord"></a>
+  </div>
 </body>
 </html>
